@@ -9,16 +9,15 @@ const Footer = () => {
         <div>
           <h5 className="mb-8 flex items-center gap-2">
             <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">GeneneT</span>
+            <span className="text-neutral text-lg font-medium">Genene</span>
           </h5>
           <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
+            I’m a software developer from Addis Ababa, Ethiopia, passionate about solving problems that actually matter.
           </p>
           <a
             href="#"
             className="text-neutral mt-4 inline-flex items-center gap-2 text-xs hover:underline">
-            More about us <span className="bg-neutral inline-block size-[10px] rounded-full" />
+            More about me <span className="bg-neutral inline-block size-[10px] rounded-full" />
           </a>
         </div>
 
