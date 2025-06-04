@@ -2,6 +2,7 @@
 import {
   ExpressjsIcon,
   JavaScriptIcon,
+  LaravelIcon,
   NestjsIcon,
   NextjsIcon,
   NodejsIcon,
@@ -126,8 +127,8 @@ export const skillList = [
     icon: ExpressjsIcon,
   },
   {
-    name: 'Nest.js',
-    icon: NestjsIcon,
+    name: 'Laravel',
+    icon: LaravelIcon,
   },
   {
     name: 'Socket.io',

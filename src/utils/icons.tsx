@@ -4,6 +4,7 @@ import Earning from '../assets/icons/earning.svg'
 import ExpressjsIcon from '../assets/icons/express.svg'
 import JavaScriptIcon from '../assets/icons/javascript.svg'
 import Likes from '../assets/icons/likes.svg'
+import LaravelIcon from '../assets/icons/laravel.svg'
 import NestjsIcon from '../assets/icons/nest.svg'
 import NextjsIcon from '../assets/icons/nextjs.svg'
 import NodejsIcon from '../assets/icons/nodejs.svg'
@@ -321,6 +322,7 @@ export {
   Instagram,
   JavaScriptIcon,
   Likes,
+  LaravelIcon,
   LinkedIn,
   MsgIcon,
   NestjsIcon,
