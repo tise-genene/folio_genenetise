@@ -26,7 +26,7 @@ const ThemeMenu = () => {
   }
 
   return (
-    <div ref={menuRef} className="fixed right-6 bottom-4 z-50 md:right-11 md:bottom-11">
+    <div ref={menuRef} className="fixed right-6 top-4 z-50 md:right-11 md:top-11">
       <div
         onClick={() => setShowThemeMenu(!showThemeMenu)}
         className="bg-neutral cursor-pointer rounded-full p-1.5 md:p-2">
@@ -39,12 +39,12 @@ const ThemeMenu = () => {
       </div>
 
       {showThemeMenu && (
-        <div className="bg-secondary animate-fade-in border-border absolute right-0 bottom-full mb-5 space-y-3 rounded-xl border p-3 md:space-y-4 md:p-5">
-          <div className="text-primary-content border-border flex items-center justify-between border-b pb-3 md:pb-4">
+        <div className="bg-secondary animate-fade-in border-border absolute right-0 top-full mt-5 space-y-3 rounded-xl border p-3 md:space-y-4 md:p-5">
+          <div className="text-primary-content border-border flex items-center justify-between border-b pb-3 md:pb-4 text-sm md:text-base">
             <span className="text-sm md:text-base">_select-theme</span>
             <CloseIcon
               onClick={() => setShowThemeMenu(false)}
-              className="h-3 w-3 cursor-pointer md:h-4 md:w-4"
+              className="h-4 w-4 cursor-pointer md:h-5 md:w-5"
             />
           </div>
 
@@ -53,7 +53,7 @@ const ThemeMenu = () => {
               key={name}
               onClick={() => changeTheme(name.toLowerCase())}
               style={{ background: colors[0], color: colors[1] }}
-              className="flex min-w-48 cursor-pointer items-center justify-between rounded-lg p-2 md:min-w-60 md:rounded-xl md:p-4">
+              className="flex min-w-48 cursor-pointer items-center justify-between rounded-lg p-2 md:min-w-52 md:rounded-xl md:p-3">
               <div className="flex items-end gap-1.5">
                 <CheckIcon className={name.toLowerCase() === theme ? 'block' : 'hidden'} />
                 <span className="text-sm md:text-base">{name}</span>
