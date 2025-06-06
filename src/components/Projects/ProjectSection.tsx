@@ -8,10 +8,12 @@ interface ProjectSectionProps {
 
 const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
   return (
-    <section id="projects">
-      <SectionHeading title="// Projects" />
+    <section id="projects" className="mt-16">
+      <div className="mb-8">
+        <SectionHeading title="// Projects" />
+      </div>
 
-      <div className="my-8 grid grid-cols-1 gap-8 md:my-12 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard key={project.priority} data={project} />
         ))}

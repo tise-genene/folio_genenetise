@@ -75,16 +75,36 @@ const Experiences = () => {
   ];
 
   return (
-    <section id="experiences">
-      <div className="my-8">
-        {/* Education Section */}
-        <div className="mb-8">
-          <SectionHeading title="// Education" />
-        </div>
+    <section id="experiences" className="mt-16">
+      <div className="mb-8">
+        <SectionHeading title="// Experience" />
+      </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+      <div className="relative">
+        {/* Timeline line */}
+        <div className="absolute left-1/2 top-0 h-full w-0.5 bg-accent/20" />
+
+        {/* Timeline dots */}
+        {experiences
+          .filter(exp => exp.type === 'work')
+          .map((_, index) => (
+            <div
+              key={index}
+              className={`absolute left-1/2 transform -translate-x-1/2 ${index === 0 ? 'top-0' : 'mt-16'}`}
+            >
+              <div className={`w-3 h-3 rounded-full ${
+                index === 0 ? 'bg-yellow-500' :
+                index === 1 ? 'bg-purple-500' :
+                index === 2 ? 'bg-blue-500' :
+                index === 3 ? 'bg-green-500' : 'bg-accent'
+              }`} />
+            </div>
+          ))}
+
+        {/* Experience cards */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {experiences
-            .filter(exp => exp.type === 'education')
+            .filter(exp => exp.type === 'work')
             .map((exp, index) => (
               <ExperienceCard
                 key={index}
@@ -95,18 +115,18 @@ const Experiences = () => {
                 description={exp.description}
                 tech={exp.tech}
                 type={exp.type}
+                isLeft={index % 2 === 0}
               />
             ))}
         </div>
+      </div>
 
-        {/* Experience Section */}
-        <div className="my-8">
-          <SectionHeading title="// Experience" />
-        </div>
-
+      {/* Education Section */}
+      <div className="mt-16">
+        <SectionHeading title="// Education" />
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {experiences
-            .filter(exp => exp.type === 'work')
+            .filter(exp => exp.type === 'education')
             .map((exp, index) => (
               <ExperienceCard
                 key={index}
