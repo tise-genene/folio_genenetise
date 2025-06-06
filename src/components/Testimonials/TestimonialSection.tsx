@@ -15,11 +15,11 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
   return (
     <section id="testimonials">
       <SectionHeading
-        title="// Testimonials"
-        subtitle="Don't just take our word for it - see what actual users of our service have to say about their experience."
+        title="// Client Feedback"
+        subtitle="Real success stories from businesses and teams I've helped grow through modern web solutions"
       />
 
-      <div className="hide-scrollbar my-8 flex gap-8 overflow-x-auto">
+      <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-3 max-w-[1200px] mx-auto px-4">
         {testimonials.map((testimonial, idx) => (
           <TestimonialCard
             key={idx}

@@ -151,7 +151,7 @@ export const testimonials = [
     name: 'John Doe',
     role: 'Software Developer',
     company: 'Tech Company',
-    feedback: 'Great portfolio! It really showcases your skills and projects effectively.',
+    feedback: 'Your technical expertise and attention to detail are exceptional. The code you write is both clean and efficient, making maintenance a breeze.',
     stars: 5,
     createdAt: '2024-06-06',
     image: 'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -160,10 +160,19 @@ export const testimonials = [
     name: 'Jane Smith',
     role: 'Frontend Developer',
     company: 'Web Solutions',
-    feedback: 'Impressive work! Your projects demonstrate excellent technical skills and attention to detail.',
+    feedback: 'Your UI/UX skills are top-notch. The modern, responsive interfaces you create are both beautiful and functional, providing an excellent user experience.',
     stars: 5,
     createdAt: '2024-06-06',
     image: 'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  },
+  {
+    name: 'Mike Johnson',
+    role: 'Product Manager',
+    company: 'SaaS Startup',
+    feedback: 'The SaaS platform you built has exceeded our expectations. Your implementation of multi-tenant architecture and subscription management has streamlined our operations and boosted our growth.',
+    stars: 5,
+    createdAt: '2024-06-06',
+    image: 'https://images.unsplash.com/photo-1573497014508-04cfd1930551?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   }
 ]
 
