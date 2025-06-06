@@ -16,7 +16,7 @@ const Footer = () => {
           <span className="text-neutral text-lg font-medium">Genene</span>
         </h5>
         <p className="text-tertiary-content mb-4">
-          I'm a software developer from Addis Ababa, Ethiopia, passionate about solving problems that actually matter.
+          Software Developer & Problem Solver
         </p>
         <div className="flex gap-4">
           {socials.map((item, index) => (
