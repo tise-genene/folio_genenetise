@@ -6,7 +6,7 @@ const EducationSection = () => {
   return (
     <section id="education" className="education-section">
       <div className="mx-auto max-w-[1200px] px-4">
-        <SectionHeading title="// Education" />
+        <SectionHeading title="Education" />
         <div className="my-8">
           <div className="border-border bg-secondary rounded-xl border p-6">
             <div className="flex flex-col gap-3">

@@ -11,7 +11,7 @@ const Hero = () => {
   const role = useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER'] })
 
   return (
-    <section className="relative bg-gradient-to-br from-primary to-secondary min-h-[calc(dvh-4rem)] overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary to-secondary min-h-[calc(dvh-3rem)] overflow-hidden">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-8 px-4 pt-16 pb-12 md:grid-cols-2 lg:p-8">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <div className="space-y-4">

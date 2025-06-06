@@ -35,13 +35,9 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-primary/90 to-secondary/90 backdrop-blur-sm h-16 overflow-hidden border-b border-border/50">
       <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-2">
-        {isVisible ? (
-          <div className="text-primary-content md:hidden">_menu</div>
-        ) : (
-          <Link href="/" className="flex items-center gap-3">
-            <span className="text-neutral font-semibold">GeneneT</span>
-          </Link>
-        )}
+        <Link href="/" className="text-neutral font-semibold">
+          GeneneT
+        </Link>
 
         <div className="md:hidden">
           <button onClick={toggleMenu}>
