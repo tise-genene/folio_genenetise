@@ -2,6 +2,7 @@
 
 import { ExperienceCard } from './ExperienceCard'
 import SectionHeading from '../SectionHeading/SectionHeading'
+import SectionContainer from '../UI/SectionContainer'
 
 interface Experience {
   title: string
@@ -123,23 +124,27 @@ const Experiences = () => {
 
       {/* Education Section */}
       <div className="mt-16">
-        <SectionHeading title="// Education" />
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
-          {experiences
-            .filter(exp => exp.type === 'education')
-            .map((exp, index) => (
-              <ExperienceCard
-                key={index}
-                title={exp.title}
-                company={exp.company}
-                role={exp.role}
-                date={exp.date}
-                description={exp.description}
-                tech={exp.tech}
-                type={exp.type}
-              />
-            ))}
+        <div className="mb-8">
+          <SectionHeading title="// Education" />
         </div>
+        <SectionContainer>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+            {experiences
+              .filter(exp => exp.type === 'education')
+              .map((exp, index) => (
+                <ExperienceCard
+                  key={index}
+                  title={exp.title}
+                  company={exp.company}
+                  role={exp.role}
+                  date={exp.date}
+                  description={exp.description}
+                  tech={exp.tech}
+                  type={exp.type}
+                />
+              ))}
+          </div>
+        </SectionContainer>
       </div>
     </section>
   );
