@@ -64,49 +64,49 @@ export const projects = [
 // Service Data
 export const serviceData = [
   {
-    icon: ReactIcon,
-    title: 'Web Application Development [React.js, Next.js]',
-    shortDescription: 'Building modern, responsive web applications with React.js and Next.js.',
-  },
-  {
     icon: NextjsIcon,
-    title: 'Full Stack Development [Next.js, Node.js]',
-    shortDescription: 'End-to-end web solutions using Next.js, Node.js, and modern databases.',
+    title: 'Full Stack Development [Next.js]',
+    shortDescription: 'Building modern, scalable applications with Next.js and TypeScript.',
   },
   {
     icon: LaravelIcon,
-    title: 'Laravel Backend Development [PHP, Laravel]',
-    shortDescription: 'Building robust and scalable PHP applications with Laravel.',
-  },
-  {
-    icon: NodejsIcon,
-    title: 'Node.js Backend Development [Node.js, Express]',
-    shortDescription: 'Creating efficient and scalable server-side applications with Node.js.',
-  },
-  {
-    icon: TypescriptIcon,
-    title: 'TypeScript Development [TypeScript]',
-    shortDescription: 'Building type-safe and maintainable applications with TypeScript.',
-  },
-  {
-    icon: TailwindCSS,
-    title: 'Modern UI Development [Tailwind CSS]',
-    shortDescription: 'Creating beautiful, responsive interfaces with Tailwind CSS.',
-  },
-  {
-    icon: ExpressjsIcon,
-    title: 'Web Platform Development [Express.js, Node.js]',
-    shortDescription: 'Building scalable web platforms and SaaS applications.',
+    title: 'Laravel Backend [PHP]',
+    shortDescription: 'Creating robust enterprise applications with Laravel.',
   },
   {
     icon: SocketIcon,
-    title: 'Real-time Applications [WebSocket, Socket.io]',
-    shortDescription: 'Developing real-time features with WebSockets and Socket.io.',
+    title: 'Real-time Systems [WebSocket]',
+    shortDescription: 'Developing real-time applications with WebSocket and Socket.io.',
+  },
+  {
+    icon: NodejsIcon,
+    title: 'Node.js Backend [Express]',
+    shortDescription: 'Building efficient server-side applications with Node.js.',
+  },
+  {
+    icon: TypescriptIcon,
+    title: 'TypeScript Development',
+    shortDescription: 'Creating type-safe, maintainable applications with TypeScript.',
+  },
+  {
+    icon: TailwindCSS,
+    title: 'Modern UI Design',
+    shortDescription: 'Crafting beautiful, responsive interfaces with Tailwind CSS.',
+  },
+  {
+    icon: ExpressjsIcon,
+    title: 'Web Platform Architecture',
+    shortDescription: 'Building scalable web platforms and SaaS applications.',
+  },
+  {
+    icon: ReactIcon,
+    title: 'Frontend Engineering',
+    shortDescription: 'Creating interactive user experiences with React.js.',
   },
   {
     icon: NextjsIcon,
-    title: 'SaaS Platform Development [Next.js, Node.js]',
-    shortDescription: 'Building scalable SaaS platforms with multi-tenant architecture and subscription management.',
+    title: 'SaaS Solutions',
+    shortDescription: 'Building enterprise-grade SaaS platforms with multi-tenant architecture.',
   }
 ]
 
@@ -197,11 +197,11 @@ export const footerLinks = [
 export const themes = [
   {
     name: 'Light',
-    colors: ['#fff', '#0d1a3b', '#dbe3f7', '#0d1a3b', '#5565e8'],
+    colors: ['#fff', '#1a237e', '#e8eaf6', '#1a237e', '#42a5f5'], // Indigo theme
   },
   {
     name: 'Dark',
-    colors: ['#011627', '#607b96', '#0d1a3b', '#5565e8', '#18f2e5'],
+    colors: ['#121212', '#616161', '#1a237e', '#42a5f5', '#bbdefb'], // Dark indigo theme
   }
 ]
 

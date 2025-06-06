@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { BurgerIcon, CloseIcon } from '../../utils/icons'
-import Logo from './Logo'
 
 const navItems = [
   {
@@ -41,7 +40,6 @@ const Navbar = () => {
         ) : (
           <Link href="/">
             <div className="animate-fade-up text-primary-content relative flex items-center gap-3 transition-all duration-300 md:static">
-              <Logo />
               <span className="text-primary-content">GeneneT</span>
             </div>
           </Link>

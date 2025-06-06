@@ -8,10 +8,10 @@ import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'GeneneT. | I\'m a Developer based in Addis Ababa'
+const title = 'Genene Tise | Full-Stack Developer'
 
 const description =
-  "Skilled full-stack developer in Addis Ababa. I\'m a proficient Full-Stack Developer with expertise in building responsive, user-focused applications using modern tools and technologies. My strength lies in delivering scalable, secure, and efficient solutions tailored to your unique needs. Let's bring your vision to life. Hire me today!"
+  "Full-Stack Developer specializing in modern web technologies. Building scalable applications with React.js, Next.js, Laravel, and Node.js. Based in Addis Ababa, Ethiopia."
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
 
@@ -27,14 +27,23 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'GeneneT Portfolio',
+    siteName: 'Genene Tise',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Genene Tise Portfolio',
+      },
+    ],
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@genene_tise',
+    creator: '@tise_genene',
+    images: ['/og-image.png'],
   },
 }
 
