@@ -1,7 +1,6 @@
 import { Testimonial } from '@/lib/types'
 import { isInViewport } from '@/utils'
 import { StarIcon } from '@/utils/icons'
-import Image from 'next/image'
 import { FC, useEffect, useRef } from 'react'
 
 interface TestimonialCardProps {
@@ -10,7 +9,7 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: FC<TestimonialCardProps> = ({
-  testimonial: { name, title, feedback, image, stars },
+  testimonial: { name, role, feedback, company, stars },
   handleActiveCard,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -41,9 +40,8 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
           ))}
         </div>
         <div>
-          <Image src={image} alt={name} width={50} height={50} className="mx-auto rounded-full" />
           <p className="text-neutral text-lg font-semibold">{name}</p>
-          <p className="text-neutral/60 text-sm">{title}</p>
+          <p className="text-neutral/60 text-sm">{role}</p>
         </div>
       </div>
     </div>
