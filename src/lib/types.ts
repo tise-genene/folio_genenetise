@@ -12,11 +12,11 @@ export interface Project {
 }
 
 export interface Testimonial {
+  id: string
   name: string
   role: string
   company: string
   feedback: string
   stars: number
   createdAt: string
-  image?: string
 }

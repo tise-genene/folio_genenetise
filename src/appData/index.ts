@@ -48,7 +48,7 @@ export const projects = [
     livePreview: 'tutor-marketplace.vercel.app',
   },
   {
-    priority: 4,
+    priority: 3,
     title: 'ScholarPath',
     shortDescription:
       'Developed a comprehensive scholarship counseling platform featuring real-time booking system for counseling sessions, integrated Learning Management System (LMS) for course delivery, and premium video content management.',
@@ -148,31 +148,34 @@ export const skillList = [
 
 export const testimonials = [
   {
-    name: 'John Doe',
-    role: 'Software Developer',
-    company: 'Tech Company',
-    feedback: 'Your technical expertise and attention to detail are exceptional. The code you write is both clean and efficient, making maintenance a breeze.',
+    id: 'test-1',
+    name: 'Tegegn T.',
+    role: 'Founder & CEO',
+    company: 'ScholarPath',
+    feedback: 'Genene played a crucial role in developing our scholarship counseling platform. His expertise in Next.js 15 and TypeScript helped us build a scalable solution that connects students with quality counseling services. His attention to detail and ability to deliver high-quality code under tight deadlines made him an invaluable asset to our team.',
     stars: 5,
-    createdAt: '2024-06-06',
-    image: 'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    createdAt: '2024-12-01',
+    image: 'https://images.unsplash.com/photo-1519345182560-9f710cd51c91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    name: 'Jane Smith',
-    role: 'Frontend Developer',
-    company: 'Web Solutions',
-    feedback: 'Your UI/UX skills are top-notch. The modern, responsive interfaces you create are both beautiful and functional, providing an excellent user experience.',
+    id: 'test-2',
+    name: 'Yohannes K.',
+    role: 'Full Stack Developer',
+    company: 'Upwork',
+    feedback: 'I had the pleasure of collaborating with Genene on several full-stack projects through Upwork. His technical expertise in both frontend and backend development is impressive. He consistently delivered high-quality code and was proactive in solving complex problems. His ability to work independently while maintaining excellent communication made him a great teammate.',
     stars: 5,
-    createdAt: '2024-06-06',
-    image: 'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    createdAt: '2024-11-15',
+    image: 'https://images.unsplash.com/photo-1519345182560-9f710cd51c91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
-    name: 'Mike Johnson',
-    role: 'Product Manager',
-    company: 'SaaS Startup',
-    feedback: 'The SaaS platform you built has exceeded our expectations. Your implementation of multi-tenant architecture and subscription management has streamlined our operations and boosted our growth.',
+    id: 'test-3',
+    name: 'Mickel Y.',
+    role: 'Technical Lead',
+    company: 'TechRise Solutions',
+    feedback: 'Genene demonstrated exceptional problem-solving skills during our collaboration on a real-time messaging system. His expertise in Socket.io and TypeScript helped us build a robust solution that handled thousands of concurrent users. His attention to detail and ability to optimize performance were key to our project\'s success.',
     stars: 5,
-    createdAt: '2024-06-06',
-    image: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    createdAt: '2024-09-20',
+
   }
 ]
 

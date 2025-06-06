@@ -6,6 +6,7 @@ import ServiceSection from '@/components/Services/ServiceSection'
 import Skills from '@/components/Skills/Skills'
 import TestimonialSection from '@/components/Testimonials/TestimonialSection'
 import Experiences from '@/components/Experiences/Experiences'
+import CVDownload from '@/components/UI/CVDownload'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
         <Skills skills={skillList} />
+        <CVDownload />
         <Experiences />
         <ProjectSection projects={projects} />
         <ServiceSection />
