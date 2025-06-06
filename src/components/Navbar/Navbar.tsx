@@ -33,15 +33,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-primary border-border h-16 overflow-hidden border-b">
-      <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-1">
+    <nav className="bg-gradient-to-r from-primary/90 to-secondary/90 backdrop-blur-sm h-16 overflow-hidden border-b border-border/50">
+      <div className="mx-auto flex h-full w-dvw max-w-[1200px] items-center justify-between px-4 py-2">
         {isVisible ? (
           <div className="text-primary-content md:hidden">_menu</div>
         ) : (
-          <Link href="/">
-            <div className="animate-fade-up text-primary-content relative flex items-center gap-3 transition-all duration-300 md:static">
-              <span className="text-primary-content">GeneneT</span>
-            </div>
+          <Link href="/" className="flex items-center gap-3">
+            <span className="text-neutral font-semibold">GeneneT</span>
           </Link>
         )}
 
@@ -61,7 +59,7 @@ const Navbar = () => {
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-8">
+              className="border-border/50 flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-8 transition-all duration-200 hover:bg-primary/50 hover:text-neutral/90">
               <Link
                 href={href}
                 className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral cursor-text' : ''}`}>
