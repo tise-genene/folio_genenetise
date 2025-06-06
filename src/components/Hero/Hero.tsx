@@ -3,6 +3,7 @@ import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from 'next/image'
 import { HeroImage } from '../../utils/images'
+import { MsgIcon } from '../../utils/icons'
 import Ellipse from './Ellipse'
 
 const Hero = () => {
@@ -22,18 +23,25 @@ const Hero = () => {
             I’m a software developer from Addis Ababa, Ethiopia, passionate about solving problems that actually matter.
           </h2>
 
-          <div className="mt-6 flex flex-wrap gap-6">
+          <div className="mt-6 flex flex-nowrap gap-4">
             <a
-              href="#"
-              aria-label="Connect with me"
+              href="https://www.upwork.com/freelancers/~0135ea11e94cfe1b1c"
+              aria-label="Hire me on Upwork"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
-              Hire Me
+              Hire me on Upwork
             </a>
             <a
               href="https://www.linkedin.com/in/genene-tise-253037234/"
               aria-label="View LinkedIn Profile"
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
               LinkedIn Profile
+            </a>
+            <a
+              href="mailto:tisegenene@gmail.com"
+              aria-label="Send email"
+              className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm flex items-center gap-2">
+              <MsgIcon className="w-4 h-4" />
+              Email me
             </a>
           </div>
         </div>

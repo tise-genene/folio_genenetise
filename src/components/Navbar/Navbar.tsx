@@ -7,19 +7,19 @@ import { BurgerIcon, CloseIcon } from '../../utils/icons'
 
 const navItems = [
   {
-    label: '_home',
+    label: 'Home',
     href: '/',
   },
   {
-    label: '_projects',
+    label: 'Projects',
     href: '/#projects',
   },
   {
-    label: '_services',
+    label: 'Services',
     href: '/#services',
   },
   {
-    label: '_contact-me',
+    label: 'Contact',
     href: '/#contact',
   },
 ]
