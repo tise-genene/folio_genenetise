@@ -14,7 +14,10 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
     <div className="mt-16">
       <div className="mb-8">
-        <SectionHeading title="// Skills" />
+        <SectionHeading
+          title="// Skills"
+          subtitle="Technical expertise and tools I use to build modern web applications"
+        />
       </div>
       <SectionContainer>
         <MarqueeWrapper className="from-primary to-primary via-marquee bg-linear-to-r">
