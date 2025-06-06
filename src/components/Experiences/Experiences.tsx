@@ -17,14 +17,24 @@ const Experiences = () => {
   const experiences: Experience[] = [
     // Education
     {
-      title: "Bachelor's degree",
+      title: "Bachelor of Science in Information Systems",
       company: "Addis Ababa University",
-      role: "Information Systems",
-      date: "September 2021 - July 2024",
-      description: "",
+      role: "Student",
+      date: "2020 - 2024",
+      description: "Studied information systems with a focus on software engineering and web development.",
+      tech: ["Java", "Python", "C++", "Data Structures"],
+      type: 'education'
+    },
+    {
+      title: "From Zero to Hero - Digital Product Development From Scratch",
+      company: "Technical University of Munich (TUM)",
+      role: "Certificate",
+      date: "Dec 2024",
+      description: "Credential ID: QTTSZZUUXE5Y",
       tech: [],
       type: 'education'
     },
+
     // Work Experience
     {
       title: "Software Engineer",
@@ -72,7 +82,7 @@ const Experiences = () => {
           <SectionHeading title="// Education" />
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mb-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {experiences
             .filter(exp => exp.type === 'education')
             .map((exp, index) => (
@@ -90,14 +100,11 @@ const Experiences = () => {
         </div>
 
         {/* Experience Section */}
-        <div className="mb-8">
+        <div className="my-8">
           <SectionHeading title="// Experience" />
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 relative">
-          {/* Center line */}
-          <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 h-full w-0.5 bg-accent/20" />
-          
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {experiences
             .filter(exp => exp.type === 'work')
             .map((exp, index) => (

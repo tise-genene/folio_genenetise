@@ -6,6 +6,7 @@ interface ExperienceCardProps {
   description: string
   tech: string[]
   type: 'education' | 'work'
+  isLeft?: boolean
 }
 
 const ExperienceCard = ({
@@ -15,9 +16,11 @@ const ExperienceCard = ({
   date,
   description,
   tech,
-  type
+  type,
+  isLeft
 }: ExperienceCardProps) => {
   const isEducation = type === 'education'
+  
   return (
     <div className="bg-secondary border-border flex flex-col justify-between rounded-[14px] border p-5">
       <div className="flex items-start justify-between gap-2">
@@ -31,13 +34,6 @@ const ExperienceCard = ({
             </span>
           </div>
           {company && <p className="text-sm text-neutral">{company}</p>}
-        </div>
-        <div className="flex justify-end items-center">
-          <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
-            isEducation ? 'bg-accent/20' : 'bg-accent/10'
-          }`}>
-            <span className="text-accent font-semibold">{isEducation ? '🎓' : '💼'}</span>
-          </div>
         </div>
       </div>
 
