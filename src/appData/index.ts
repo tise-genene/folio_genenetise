@@ -64,35 +64,50 @@ export const projects = [
 // Service Data
 export const serviceData = [
   {
-    icon: JavaScriptIcon,
-    title: 'JavaScript Development',
-    shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
-  },
-  {
     icon: ReactIcon,
-    title: 'React.js Development',
-    shortDescription: 'Building modern and responsive user interfaces with React.js.',
-  },
-  {
-    icon: NodejsIcon,
-    title: 'Node.js Backend',
-    shortDescription: 'Developing scalable server-side applications using Node.js.',
+    title: 'Web Application Development [React.js, Next.js]',
+    shortDescription: 'Building modern, responsive web applications with React.js and Next.js.',
   },
   {
     icon: NextjsIcon,
-    title: 'Next.js Development',
-    shortDescription: 'Creating server-rendered React applications with Next.js.',
+    title: 'Full Stack Development [Next.js, Node.js]',
+    shortDescription: 'End-to-end web solutions using Next.js, Node.js, and modern databases.',
+  },
+  {
+    icon: LaravelIcon,
+    title: 'Laravel Backend Development [PHP, Laravel]',
+    shortDescription: 'Building robust and scalable PHP applications with Laravel.',
+  },
+  {
+    icon: NodejsIcon,
+    title: 'Node.js Backend Development [Node.js, Express]',
+    shortDescription: 'Creating efficient and scalable server-side applications with Node.js.',
   },
   {
     icon: TypescriptIcon,
-    title: 'TypeScript Development',
-    shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+    title: 'TypeScript Development [TypeScript]',
+    shortDescription: 'Building type-safe and maintainable applications with TypeScript.',
   },
   {
     icon: TailwindCSS,
-    title: 'Tailwind CSS Styling',
-    shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+    title: 'Modern UI Development [Tailwind CSS]',
+    shortDescription: 'Creating beautiful, responsive interfaces with Tailwind CSS.',
   },
+  {
+    icon: ExpressjsIcon,
+    title: 'Web Platform Development [Express.js, Node.js]',
+    shortDescription: 'Building scalable web platforms and SaaS applications.',
+  },
+  {
+    icon: SocketIcon,
+    title: 'Real-time Applications [WebSocket, Socket.io]',
+    shortDescription: 'Developing real-time features with WebSockets and Socket.io.',
+  },
+  {
+    icon: NextjsIcon,
+    title: 'SaaS Platform Development [Next.js, Node.js]',
+    shortDescription: 'Building scalable SaaS platforms with multi-tenant architecture and subscription management.',
+  }
 ]
 
 // Skill List
