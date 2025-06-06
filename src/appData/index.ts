@@ -16,53 +16,48 @@ import {
 export const projects = [
   {
     priority: 1,
-    title: 'Project Alpha',
+    title: 'HRMS (Human Resource Management System) for Yekatit 12 Hospital',
     shortDescription:
-      'A groundbreaking project that revolutionizes the way we approach technology. Built with cutting-edge tools for maximum efficiency, it sets new industry standards.',
+      'Developed a comprehensive Human Resource Management System (HRMS) for Yekatit 12 Hospital, a leading healthcare provider in Ethiopia. This project, built with HTML, CSS, JavaScript, PHP-CodeIgniter, and MySQL, streamlines HR processes including employee management, payroll, and performance tracking. The system enhances operational efficiency and improves administrative workflows within the hospital, ensuring a more organized and effective HR department.',
     cover:
-      'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/alpha',
+      'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     type: 'Client Work 🙍‍♂️',
-    siteAge: '1 month old',
+    githubLink: 'https://github.com/tise-genene/HR_Process_Optimizer',
   },
   {
     priority: 2,
-    title: 'Project Beta',
+    title: 'Laravel Restaurant Reservation System',
     shortDescription:
-      'Project Beta is a static technical blog site built with GatsbyJS. I share tips on topics like building reusable components in React, explaining JavaScript methods and concepts, Node.js scripts, and more.',
+      'Developed a sophisticated Restaurant Reservation System as part of a semester final project for the Staffs Restaurant at Addis Ababa University. Built with Laravel, this system allows users to reserve seats, lunches, dinners, and even bedrooms seamlessly. It offers a user-friendly interface and robust backend management for restaurant operations, providing a modern solution for hospitality management and customer service.',
     cover:
       'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/beta',
-    visitors: '8K Visitors',
-    earned: '$400 Earned',
+    type: 'Client Work 🙍‍♂️',
+    skills: 'Laravel · Back-End Web Development · Databases · MySQL',
+    githubLink: 'https://github.com/tise-genene/Laravel-Restaurant-Reservation-System-project',
   },
   {
     priority: 3,
-    title: 'Project Epsilon',
+    title: 'Student-Tutor Marketplace Platform',
     shortDescription:
-      'A collection of engaging coding challenges designed to help developers improve their ReactJS skills by writing functional business logic. Your task is to make it functional by writing business logic, to improve your frontend skills',
+      'A Next.js-based tutor marketplace platform built with TypeScript, Prisma, and PostgreSQL that enables students to find and book tutors, featuring real-time messaging, notifications, and a comprehensive booking system.',
     cover:
       'https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-
-    type: 'Free 🔥',
-    livePreview: 'https://example.com/epsilon',
-    githubLink: 'https://github.com/example/ReactJS-Coding-Challenges',
-    githubStars: '40 Stars',
-    numberOfSales: '138 Sales',
+    type: 'New 🔥',
+    skills: 'Next.js · TypeScript · Prisma · PostgreSQL',
+    githubLink: 'https://github.com/tise-genene/tutor-marketplace',
+    livePreview: 'tutor-marketplace.vercel.app',
   },
   {
     priority: 4,
-    title: 'Ejucationzz',
+    title: 'ScholarPath',
     shortDescription:
-      'Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed. Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed.',
+      'Developed a comprehensive scholarship counseling platform featuring real-time booking system for counseling sessions, integrated Learning Management System (LMS) for course delivery, and premium video content management.',
     cover:
-      'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pZGVvfHx8fGVufDB8fHx8fA%3D%3D',
     type: 'New 🔥',
-    livePreview: 'https://example.com/Ejucationzz',
-    siteAge: '4 months old',
-    visitors: '100 Visitors',
-    githubLink: '',
-    earned: '',
+    skills: 'Next.js 15 · TypeScript · React 19 · Tailwind CSS',
+    githubLink: 'https://github.com/tise-genene/scholarpath',
+    livePreview: 'scholarpath-omega.vercel.app',
   },
 ]
 
@@ -134,6 +129,27 @@ export const skillList = [
     name: 'Socket.io',
     icon: SocketIcon,
   },
+]
+
+export const testimonials = [
+  {
+    name: 'John Doe',
+    role: 'Software Developer',
+    company: 'Tech Company',
+    feedback: 'Great portfolio! It really showcases your skills and projects effectively.',
+    stars: 5,
+    createdAt: '2024-06-06',
+    image: 'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  },
+  {
+    name: 'Jane Smith',
+    role: 'Frontend Developer',
+    company: 'Web Solutions',
+    feedback: 'Impressive work! Your projects demonstrate excellent technical skills and attention to detail.',
+    stars: 5,
+    createdAt: '2024-06-06',
+    image: 'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  }
 ]
 
 export const footerLinks = [

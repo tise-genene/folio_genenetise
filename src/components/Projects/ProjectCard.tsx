@@ -1,13 +1,8 @@
 import { Project } from '@/lib/types'
 import Image from 'next/image'
-import { Earning, GithubIcon, Likes, PreviewIcon, Star, Timer } from '../../utils/icons'
+import { GithubIcon, PreviewIcon } from '../../utils/icons'
 
-const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
-  <li className="flex gap-2">
-    <Image src={icon} alt={text} className="size-[18px] md:size-5" />
-    <span className="text-neutral text-sm">{text}</span>
-  </li>
-)
+
 
 interface ProjectCardProps {
   data: Project
@@ -17,16 +12,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   const {
     title,
     shortDescription,
-    visitors,
-    earned,
-    ratings,
-    githubStars,
-    numberOfSales,
     livePreview,
     githubLink,
-    siteAge,
     type,
     cover,
+    siteAge,
+    associatedWith,
+    skills,
   } = data
 
   return (
@@ -42,20 +34,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
               </span>
             )}
           </div>
-          <ul className="mt-3 flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-4">
-            {(visitors || numberOfSales) && (
-              <IconText text={(visitors || numberOfSales)?.toString() || ''} icon={Likes} />
-            )}
-            {siteAge && <IconText text={siteAge} icon={Timer} />}
-            {earned && <IconText text={earned} icon={Earning} />}
-            {(ratings || githubStars) && (
-              <IconText text={(ratings || githubStars)?.toString() || ''} icon={Star} />
-            )}
-          </ul>
+          {skills && <p className="text-sm text-neutral">Skills: {skills}</p>}
         </div>
         <figure className="flex justify-end overflow-hidden">
           <Image
-            src={cover}
+            src={cover || '/default-project-cover.png'}
             width={150}
             height={80}
             alt="Project Cover"
