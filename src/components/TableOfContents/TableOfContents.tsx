@@ -4,7 +4,7 @@ import useHeadingsData from '@/hooks/useHeadingsData'
 import useIsLargeScreen from '@/hooks/useIsLargeScreen'
 import { ChevronRightIcon } from '@/utils/icons'
 import { useEffect, useState } from 'react'
-import { HeadingItem } from '@/lib/types'
+import { Heading } from '@/lib/types'
 
 const TableOfContents = () => {
   const headings = useHeadingsData()
@@ -37,7 +37,7 @@ const TableOfContents = () => {
               </a>
               {items.length > 0 && (
                 <ul className="list-outside list-[circle] space-y-3 ps-4 pt-3">
-                  {items.map((child: HeadingItem) => (
+                  {items.map((child: Heading) => (
                     <li key={child.id}>
                       <a
                         href={`#${child.id}`}

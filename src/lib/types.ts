@@ -21,13 +21,10 @@ export interface Testimonial {
   createdAt: string
 }
 
-export interface HeadingItem {
-  id: string
-  title: string
-}
-
 export interface Heading {
   id: string
   title: string
-  items: HeadingItem[]
+  items: Heading[]
 }
+
+export type HeadingItem = Heading
