@@ -3,7 +3,6 @@ import {
   ExpressjsIcon,
   JavaScriptIcon,
   LaravelIcon,
-  NestjsIcon,
   NextjsIcon,
   NodejsIcon,
   ReactIcon,

@@ -8,7 +8,7 @@ import Ellipse from './Ellipse'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
-  const role = useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER'] })
+  useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER'] })
 
   return (
     <section className="relative bg-gradient-to-br from-primary to-secondary min-h-[calc(dvh-3rem)] overflow-hidden">

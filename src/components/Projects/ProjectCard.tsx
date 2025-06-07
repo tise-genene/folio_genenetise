@@ -16,8 +16,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     githubLink,
     type,
     cover,
-    siteAge,
-    associatedWith,
     skills,
   } = data
 

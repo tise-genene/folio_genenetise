@@ -2,11 +2,6 @@ import React from 'react'
 import { socials } from '@/appData/personal'
 import Logo from '../Navbar/Logo'
 
-interface SocialLink {
-  href: string
-  icon: React.ReactNode
-}
-
 const Footer = () => {
   return (
     <footer className="bg-secondary relative flex flex-col items-center justify-center gap-8 py-12">

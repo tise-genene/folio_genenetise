@@ -15,7 +15,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project) => (
-          <ProjectCard key={project.priority} data={project} />
+          <ProjectCard key={project.title} data={project} />
         ))}
       </div>
     </section>

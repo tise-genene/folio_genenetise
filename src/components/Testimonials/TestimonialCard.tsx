@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: FC<TestimonialCardProps> = ({
-  testimonial: { name, role, feedback, company, stars },
+  testimonial: { name, role, feedback, stars },
   handleActiveCard,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -24,7 +24,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
     return () => {
       observer?.disconnect()
     }
-  }, [cardRef.current])
+  }, [cardRef, handleActiveCard])
 
   return (
     <div
