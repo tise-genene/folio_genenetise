@@ -29,6 +29,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.pravatar.cc',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 
@@ -66,15 +78,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ]
-  },
-}
-        hostname: 'res.cloudinary.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.pravatar.cc',
-      },
-    ],
   },
 }
 
