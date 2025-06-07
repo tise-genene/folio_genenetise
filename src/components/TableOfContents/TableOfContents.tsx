@@ -4,11 +4,7 @@ import useHeadingsData from '@/hooks/useHeadingsData'
 import useIsLargeScreen from '@/hooks/useIsLargeScreen'
 import { ChevronRightIcon } from '@/utils/icons'
 import { useEffect, useState } from 'react'
-
-type HeadingItem = {
-  id: string
-  title: string
-}
+import { HeadingItem } from '@/lib/types'
 
 const TableOfContents = () => {
   const headings = useHeadingsData()

@@ -20,3 +20,14 @@ export interface Testimonial {
   stars: number
   createdAt: string
 }
+
+export interface HeadingItem {
+  id: string
+  title: string
+}
+
+export interface Heading {
+  id: string
+  title: string
+  items: HeadingItem[]
+}
