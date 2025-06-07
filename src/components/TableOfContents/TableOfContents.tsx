@@ -5,15 +5,9 @@ import useIsLargeScreen from '@/hooks/useIsLargeScreen'
 import { ChevronRightIcon } from '@/utils/icons'
 import { useEffect, useState } from 'react'
 
-interface HeadingItem {
+type HeadingItem = {
   id: string
   title: string
-}
-
-interface Heading {
-  id: string
-  title: string
-  items: HeadingItem[]
 }
 
 const TableOfContents = () => {
