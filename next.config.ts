@@ -25,12 +25,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'fonts.googleapis.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'res.cloudinary.com',
         port: '',
         pathname: '/**',
@@ -44,7 +38,7 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // Add font loading configuration
+  // Font loading configuration
   async headers() {
     return [
       {
@@ -59,7 +53,7 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  // Add font loading configuration
+  // Font loading configuration
   async rewrites() {
     return [
       {
@@ -69,7 +63,7 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  // Add font loading configuration
+  // Font loading configuration
   async redirects() {
     return [
       {
