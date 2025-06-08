@@ -13,13 +13,13 @@ const title = 'Genene Tise | Full-Stack Developer'
 const description =
   "Full-Stack Developer specializing in modern web technologies. Building scalable applications with React.js, Next.js, Laravel, and Node.js. Based in Addis Ababa, Ethiopia."
 
-const url = process.env.NEXT_PUBLIC_SITE_URL
+const url = process.env.NEXT_PUBLIC_SITE_URL || 'https://genenetise.dev'
 
 export const metadata: Metadata = {
   title,
   description,
   category: 'technology',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
+  metadataBase: new URL(url),
   alternates: {
     canonical: url,
   },
