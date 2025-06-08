@@ -27,42 +27,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-
-  // Font loading configuration
-  async headers() {
-    return [
-      {
-        source: '/fonts/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-    ]
-  },
-
-  // Font loading configuration
-  async rewrites() {
-    return [
-      {
-        source: '/fonts/:path*',
-        destination: 'https://fonts.googleapis.com/:path*',
-      },
-    ]
-  },
-
-  // Font loading configuration
-  async redirects() {
-    return [
-      {
-        source: '/fonts/:path*',
-        destination: 'https://fonts.googleapis.com/:path*',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 export default nextConfig
