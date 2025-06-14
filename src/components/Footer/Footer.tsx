@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="text-neutral text-lg font-medium">Genene</span>
         </h5>
         <p className="text-tertiary-content mb-4">
-          Software Developer & Problem Solver
+        Passionate Fullstack Web & Mobile Developer
         </p>
         <div className="flex gap-4">
           {socials.map((item, index) => (
