@@ -78,7 +78,7 @@ const Experiences = () => {
   return (
     <section id="experiences" className="mt-16">
       <div className="mb-8">
-        <SectionHeading title="// Experience" />
+        <SectionHeading title="<Experience />" />
       </div>
 
       <div className="relative">
@@ -125,7 +125,7 @@ const Experiences = () => {
       {/* Education Section */}
       <div className="mt-16">
         <div className="mb-8">
-          <SectionHeading title="// Education" />
+          <SectionHeading title="<Education />" />
         </div>
         <SectionContainer>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">

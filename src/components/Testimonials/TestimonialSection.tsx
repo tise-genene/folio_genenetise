@@ -17,7 +17,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
     <div className="mt-16">
       <div className="mb-8">
         <SectionHeading
-          title="// Client Feedback"
+          title="<Testimonials />"
           subtitle="Real success stories from businesses and teams I've helped grow through modern web solutions"
         />
       </div>

@@ -15,7 +15,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
     <div className="mt-16">
       <div className="mb-8">
         <SectionHeading
-          title="// Skills"
+          title="<Skills />"
           subtitle="Technical expertise and tools I use to build modern web applications"
         />
       </div>

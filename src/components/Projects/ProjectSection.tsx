@@ -10,7 +10,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
   return (
     <section id="projects" className="mt-16">
       <div className="mb-8">
-        <SectionHeading title="// Projects" />
+        <SectionHeading title="<Projects />" />
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

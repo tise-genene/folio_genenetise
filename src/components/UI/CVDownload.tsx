@@ -10,14 +10,14 @@ const CVDownload: React.FC<CVDownloadProps> = ({ className = '' }) => {
     <div className={`mt-16 ${className}`}>
       <div className="mb-8">
         <SectionHeading
-          title="// Download CV"
-          subtitle="Get my detailed résumé"
+          title="<CV />"
+          subtitle="Get my detailed resume"
         />
       </div>
       <SectionContainer>
         <div className="flex flex-col items-center justify-center text-center gap-4">
           <p className="text-neutral/80 max-w-[600px]">
-            Want the full résumé? Download my detailed CV for a complete overview of my experience.
+            Want the full resume? Download my detailed CV for a complete overview of my experience.
           </p>
           <a
             href="/docs/cv.pdf"
