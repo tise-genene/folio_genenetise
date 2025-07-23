@@ -9,7 +9,7 @@ const ServiceSection = () => {
       <div className="mb-8">
         <SectionHeading
           title="<Services />"
-          subtitle="Building modern web solutions that drive business growth and user engagement."
+          subtitle="What I Offer"
         />
       </div>
       <SectionContainer>
